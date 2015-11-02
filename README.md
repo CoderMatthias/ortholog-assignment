@@ -6,8 +6,8 @@ The purpose of the 'full gene blast' scripts is to assign a *Drosophila melanoga
 
 ##Requirements
 ###Software
-  python v2.7.6
-  blast v2.2.31
+    python v2.7.6
+    blast v2.2.31
 
 ###Files
 mel_all_gene.fasta - fasta of all Dmel genes
