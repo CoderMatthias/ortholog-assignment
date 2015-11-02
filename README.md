@@ -6,13 +6,13 @@ The purpose of the 'full gene blast' scripts is to assign a *Drosophila melanoga
 
 ##Requirements
 ###Software
-    python v2.7.6
-    blast v2.2.31
+`python v2.7.6`  
+`blast v2.2.31`
 
 ###Files
-mel_all_gene.fasta - fasta of all Dmel genes
-mel_all_prot.fasta - fasta of all Dmel proteins
-spec_all_gene.fasta - fasta of all specie of choice genes
-spec_all_prot.fasta - fasta of all specie of choice proteins
-species_list.txt - list of all species for which the scripts are run
-fbgn_fbtr_fbpp.... - list of all fbgn# and corresponding fbpp#
+`mel_all_gene.fasta` - fasta of all Dmel genes  
+`mel_all_prot.fasta` - fasta of all Dmel proteins  
+`spec_all_gene.fasta` - fasta of all specie of choice genes  
+`spec_all_prot.fasta` - fasta of all specie of choice proteins  
+`species_list.txt` - list of all species for which the scripts are run  
+`fbgn_fbtr_fbpp....` - list of all fbgn# and corresponding fbpp#  
