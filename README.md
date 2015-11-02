@@ -22,18 +22,19 @@ These file must be named accordingly to work.  For the spec_all_(gene or prot).f
 
 ##Directions
 These directions are specifically for running this pipeline on the UNC computing clusters and will likely have to be modified if working in a different computing environment.  
-Run the numbered commands below, waiting for jobs to finish before continuing onward.
-Load modules
-1. `module load python/2.7.6`
+
+Run the numbered commands below, waiting for jobs to finish before continuing onward.  
+Load modules  
+1. `module load python/2.7.6`  
 2. `module load blast/2.2.31`  
 
-Blast genes and proteins against *Drosophila melanogaster* database
-3. `bsub -o ../00_logs/make_blast_db.%J.out python 00_mk_db_N_sp_list.py`
-4. `bsub python 01_parse_prot_fasta.py`
-5. `bsub python 02_spec_blast_to_mel.py`
-6. `bsub python 03_concatinate_blast_bits_into_blastp.py`
+Blast genes and proteins against *Drosophila melanogaster* database  
+3. `bsub -o ../00_logs/make_blast_db.%J.out python 00_mk_db_N_sp_list.py`  
+4. `bsub python 01_parse_prot_fasta.py`  
+5. `bsub python 02_spec_blast_to_mel.py`  
+6. `bsub python 03_concatinate_blast_bits_into_blastp.py`  
 
-Assign orthologs based on blast results
-7. `bsub -o ../00_logs/ortho_assign.%J.out bash ALL_ORTHO_ASSIGNMENT.sh`
-..*This bash script wraps the 04-10 python scripts to quicken the process.
+Assign orthologs based on blast results  
+7. `bsub -o ../00_logs/ortho_assign.%J.out bash ALL_ORTHO_ASSIGNMENT.sh`  
+..*This bash script wraps the 04-10 python scripts to quicken the process.  
 
