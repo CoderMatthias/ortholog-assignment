@@ -35,6 +35,6 @@ Blast genes and proteins against *Drosophila melanogaster* database
 6. `bsub python 03_concatinate_blast_bits_into_blastp.py`  
 
 Assign orthologs based on blast results  
-7. `bsub -o ../00_logs/ortho_assign.%J.out bash ALL_ORTHO_ASSIGNMENT.sh`  
+7. `bsub -o ../00_logs/ortho_assign.%J.out bash ALL_ORTHO_ASSIGNMENT.sh`
   + This bash script wraps the 04-10 python scripts to quicken the process.  
 
