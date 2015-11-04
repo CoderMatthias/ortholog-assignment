@@ -40,3 +40,9 @@ Assign orthologs based on blast results
 
 ##Weaknesses
 This program gives a prediction of the orthologs.  However, in its current itteration, this program is unable to identify gene duplication events.  The duplicated gene the deviates most from the *Drosophila melanogaster* sequence will be discarded.
+
+##Detailed description of calling
+This work flows combines the results of a blastn and a blastp of a species against a *Drosophila melanogaster* blast databases.  For each gene, the blastn and blastp results are combined and checked against a set of parameters, and if met, is considered an ortholog.  The ortholog parameters are as follows (in order of importance):  
+1. There is only one blastn result for the gene, and the blastn bit score is > 200.
+2. There is more than one blastn result, but 60% of the top hit's bit score is greater than the next closest.
+3. There is more than one blastp result, but 60% of the top hit's bit score is greater than the next closest, and the top hit's bit score is greater than 200.
